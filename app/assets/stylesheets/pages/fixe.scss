@@ -1,0 +1,37 @@
+.title-fixe {
+  text-align: center;
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 60px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 10);
+  background-color: #143642;
+  color: #ebebeb;
+
+  h3 {
+    margin: 32px 0;
+    font-family: 'Hind Madurai', sans-serif;
+  }
+
+  p {
+    margin: 16px 0;
+  }
+}
+
+.no-border {
+  border-bottom: none !important;
+}
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+  .prestations-fixe {
+    width: 80%;
+    margin: auto;
+  }
+
+  .title-fixe {
+    padding: 15px;
+    background-color: #143642;
+    border: none;
+    box-shadow: none;
+    color: #ebebeb;
+  }
+}

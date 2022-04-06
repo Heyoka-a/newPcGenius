@@ -1,0 +1,89 @@
+.contact-container {
+  background-color: #143642;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.titlefor-contact {
+  width: 100%;
+  background-color: #143642;
+  text-align: center;
+}
+
+.titlefor-contact,
+.mein-infos {
+  display: flex;
+  flex-direction: column;
+  color: #ebebeb;
+
+  h1 {
+    margin: 0;
+    font-family: 'Hind Madurai', sans-serif;
+  }
+}
+
+.left-infos {
+  width: 400px;
+  text-align: center;
+}
+
+.right-infos {
+  max-width: 400px;
+  color: #ebebeb;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.serv-btn {
+  text-decoration: none;
+  color: #ebebeb;
+  font-family: 'Hind Madurai', sans-serif;
+  border: 1px solid #ebebeb;
+  padding: 8px 16px;
+  border-radius: 5px 0 5px 0;
+}
+
+.serv-btn:hover {
+  color: #143642;
+  background-color: #ebebeb;
+  font-weight: bold;
+  transition: 0.6s;
+}
+
+.barre {
+  height: 300px;
+  width: 2px;
+  background-color: #0f2831;
+}
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+  .contact-container {
+    flex-wrap: wrap;
+    margin: 18px 0;
+  }
+
+  .barre {
+    width: 80%;
+    margin: auto;
+    height: 2px;
+    background-color: #0f2831;
+  }
+
+  .right-infos {
+    text-align: center;
+    padding: 0 4px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .footer {
+    position: relative;
+  }
+}

@@ -1,0 +1,31 @@
+<%= render 'shared/navbar' %>
+
+<div class="console-container">
+    <div class="title">
+      <h3>Voici les préstations pour les consoles, n'hésitez pas à me contacter pour toutes questions</h3>
+      <%= link_to "me contacter", contact_path, class: "solo-btn" %>
+    </div>
+
+    <div class="prestations-console">
+           <div class="logo-console">
+              <h3><i class="fa-brands fa-xbox"></i></h3>
+              <h3><i class="fa-brands fa-playstation"></i></h3>
+            </div>
+      <ul>
+        <li>Devis à distance.</li>
+        <li>Déplacements à domicile pour diagnostique, assistance, devis.</li>
+        <h3>Installation</h3>
+        <li>Dépannage pour erreur disque dur.</li>
+        <li>Installation materiel(disque dur,composants,etc).</li>
+        <h3>Nettoyage</h3>
+        <li>Nettoyage interne <span>(pronlonge la durée de vie, réduit la chauffe et le bruit)</span>. </li>
+        <li>Remplacement pâte thermique.</li>
+        <h3>Données</h3>
+        <li class="no-border">Destruction complète des données.</li>
+      </ul>
+    </div>
+</div>
+
+
+
+<%= render 'shared/footer' %>

@@ -1,0 +1,37 @@
+body {
+  background-color: #143642;
+}
+
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+  .cards-contain {
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    margin: 60px 0;
+  }
+
+  .carte-img {
+    width: 150px;
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .cards-contain {
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    margin: 130px 0;
+  }
+
+  .carte-img {
+    width: 300px;
+    height: 270px;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+  }
+}

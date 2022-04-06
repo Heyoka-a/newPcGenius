@@ -1,0 +1,57 @@
+.console-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.prestations-console {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  font-family: 'Quicksand',
+    sans-serif;
+  font-weight: bold;
+  background-color: #143642;
+  color: #ebebeb;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+  h3 {
+    margin: 4px 0;
+    color: #A56336;
+    font-family: 'Hind Madurai', sans-serif;
+  }
+
+  li {
+    border-bottom: 1px solid black;
+    padding: 2px 0;
+  }
+}
+
+.logo-console {
+  display: flex;
+  justify-content: space-around;
+  color: #A56336;
+  font-size: 24px;
+}
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+  .console-container {
+    flex-wrap: wrap;
+    margin: 42px 0;
+    gap: 50px;
+  }
+
+  .prestations-console {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .console-container {
+    flex-wrap: wrap;
+    gap: 90px;
+    margin: 110px 0;
+  }
+}

@@ -1,0 +1,103 @@
+.laptop-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 60px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 10);
+  background-color: #143642;
+  color: #ebebeb;
+
+  h3 {
+    margin: 32px 0;
+    font-family: 'Hind Madurai', sans-serif;
+  }
+
+  p {
+    margin: 16px 0;
+  }
+}
+
+.solo-btn {
+  text-decoration: none;
+  color: #ebebeb;
+  background-color: #0f2831;
+  border: 1px solid #0f2831;
+  padding: 8px;
+  border-radius: 5px 0 5px 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.solo-btn:hover {
+  background-color: #ebebeb;
+  color: #143642;
+  font-weight: bold;
+  transition: 0.6s;
+}
+
+.prestations-laptop {
+  display: flex;
+  justify-content: center;
+}
+
+.prestations-laptop>ul {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  background-color: #143642;
+  color: #ebebeb;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+  h3 {
+    margin: 4px 0;
+    color: #A56336;
+    font-family: 'Hind Madurai', sans-serif;
+  }
+
+  li {
+    border-bottom: 1px solid black;
+    padding: 2px 0;
+  }
+}
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+  .prestations-laptop {
+    width: 80%;
+    margin: auto;
+  }
+
+  .laptop-container {
+    flex-wrap: wrap;
+  }
+
+  .title {
+    padding: 18px;
+    background-color: #143642;
+    border: none;
+    box-shadow: none;
+    color: #ebebeb;
+  }
+
+  .solo-btn {
+    background-color: #0f2831;
+    color: #ebebeb;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .laptop-container {
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 30px 0;
+  }
+}
