@@ -33,3 +33,20 @@
   color: #ebebeb;
   transition: 0.6s;
 }
+
+.back-button {
+  position: absolute;
+  left: 3%;
+  top: 5%;
+  color: #143642;
+  font-size: 18px;
+  font-family: 'Hind Madurai', sans-serif;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background-color: #143642;
+  border-radius: 4px;
+  color: #ebebeb;
+  transition: 0.6s;
+}
