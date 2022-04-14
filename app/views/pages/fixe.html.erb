@@ -1,33 +1,16 @@
 <%= render 'shared/navbar' %>
 
 <div class="laptop-container">
-    <div class="title-fixe">
-      <h3>Voici les préstations pour ordinateurs fixes, n'hésitez pas à me contacter pour toutes questions.</h3>
-      <%= link_to "me contacter", contact_path, class: "solo-btn" %>
-      <p>Concernant l'assemblage complet de PC fixe, contactez-moi!</p>
-    </div>
-
     <div class="prestations-laptop">
-      <ul>
-        <li>Devis à distance.</li>
-        <li>Déplacements à domicile pour diagnostique, assistance, devis.</li>
-        <h3>Désinfection</h3>
-        <li>Analyse et suppression des virus, publicités intempéstives et tous programmes malveillants. <span>PC rapide et sécurisé.</span> </li>
-        <h3>Installation</h3>
-        <li>Installation/réinstallation de windows 10 (11 si possibilité).</li>
-        <li>Dépannage/installation d'un périphérique(imprimantes,scanner,etc).</li>
-        <li>Installation materiel(disque dur, carte graphique,composants,etc).</li>
-        <h3>Nettoyage</h3>
-        <li>Nettoyage interne <span>(pronlonge la durée de vie, réduit la chauffe et le bruit)</span>. </li>
-        <li>Remplacement pâte thermique.</li>
-        <h3>Données</h3>
-        <li>Récupération des données.(photos,vidéos,fichiers textes, etc).</li>
-        <li>Clonage disque dur</li>
-        <li>Destruction complète des données.</li>
-        <h3>Mini formation</h3>
-        <li class="no-border">Si nécéssaire, guidage et initialisation d'un nouvel ordinateur</li>
-      </ul>
+        <%= image_tag "deplace-card.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= image_tag "install-card.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= image_tag "clean-card.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= image_tag "desinf-card.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= image_tag "data-card.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= image_tag "formation-card.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= link_to "me contacter", contact_path, class: "solo-btn" %>
     </div>
 </div>
+
 
 <%= render 'shared/footer' %>

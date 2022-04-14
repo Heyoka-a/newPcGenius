@@ -1,13 +1,14 @@
 <%= render 'shared/navbar' %>
 
 <div class="phone-container">
-    <div class="title">
-      <h3>Voici les préstations pour smartphones, n'hésitez pas à me contacter pour toutes questions.</h3>
-      <%= link_to "me contacter", contact_path, class: "solo-btn" %>
+    <div class="prestations-phone">
+        <%= image_tag "phone-card1.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= image_tag "phone-card2.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= image_tag "phone-card3.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= image_tag "phone-card4.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= image_tag "phone-card5.png", alt: 'image des tarifs', class: "img-tarif-laptop" %>
+        <%= link_to "me contacter", contact_path, class: "solo-btn" %>
     </div>
-      <div class="prestations-phone">
-        <%= image_tag 'presta-test.png', class: "iphone-pix" %>
-      </div>
 </div>
 
 <%= render 'shared/footer' %>
