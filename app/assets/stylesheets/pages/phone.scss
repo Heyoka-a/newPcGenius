@@ -1,40 +1,38 @@
 .phone-container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .prestations-phone {
-  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  margin: 16px auto;
 }
 
-.iphone-pix {
-  cursor: pointer;
-}
-
-.iphone-pix:hover {
-  transform: scale(1.1);
-  transition: 0.4s;
-}
 
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
-  .phone-container {
-    flex-wrap: wrap;
-  }
+    .prestations-phone {
+      width: 80%;
+      grid-template-columns: 1fr;
+    }
 
-  .prestations-phone {
-    display: flex;
-    margin: auto;
-  }
-  .back-button {
-    top: 2%;
-  }
+    .solo-btn {
+      background-color: #0f2831;
+      color: #ebebeb;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .phone-container {
-    flex-direction: column;
-    gap: 42px;
-    margin: 50px 0;
+  .prestations-phone{
+    grid-template-columns: 1fr 1fr;
+  }
+  .solo-btn {
+    background-color: #0f2831;
+    color: #ebebeb;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
   }
 }
